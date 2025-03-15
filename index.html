@@ -13,8 +13,8 @@
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            gap: 20px;
             flex-wrap: wrap;
+            gap: 20px;
         }
 
         .card-wrapper {
@@ -33,7 +33,6 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, opacity 0.3s ease;
             cursor: pointer;
-            background-color: #f8faf8;
         }
 
         .card-custom img {
@@ -61,13 +60,6 @@
             margin-top: 10px;
         }
 
-        .card-footer {
-            background-color: white;
-            border-top: 1px solid #ddd;
-            padding: 0.75rem;
-            text-align: center;
-        }
-
         .card-custom:hover {
             transform: scale(1.1); /* 확대 효과 */
             z-index: 2; /* 카드가 다른 카드 위로 올라오도록 */
@@ -76,32 +68,20 @@
         .card-custom:hover .card-body {
             opacity: 1; /* 설명 텍스트 표시 */
         }
-
-        .btn-custom {
-            background-color: #007bff;
-            color: white;
-            border-radius: 50px;
-            text-transform: uppercase;
-        }
-
-        .btn-custom:hover {
-            background-color: #0056b3;
-            color: white;
-        }
     </style>
 </head>
 <body>
 
     <div class="container mt-5">
-        <h4>This is MY Playlist List.</h4>
+        <h4>My Playlist</h4>
         <div class="card-container">
             <!-- 카드 1 -->
             <div class="card-wrapper">
-                <div class="card-custom" style="background-color: #f8faf8;">
+                <div class="card-custom" style="background-color: #f8f9fa;">
                     <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" target="_blank">
-                        <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
+                        <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" alt="YouTube Video Thumbnail">
                     </a>
-                    <div class="card-body" style="background-color: #f1f5f1;">
+                    <div class="card-body">
                         <h5 class="card-title">페페플리</h5>
                         <p class="card-text">제목이 없는 플리이지만 페페가 배경으로 있어서 페페플리라 불린다. 매우매우 좋은 음악들로 구성된 인생플리.</p>
                     </div>
@@ -110,17 +90,29 @@
 
             <!-- 카드 2 -->
             <div class="card-wrapper">
-                <div class="card-custom" style="background-color: #f8faf8;">
-                    <a href="https://www.youtube.com/watch?v=FSa4tVouRIc&&start=0" target="_blank">
-                        <img src="https://img.youtube.com/vi/FSa4tVouRIc/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
+                <div class="card-custom" style="background-color: #e9ecef;">
+                    <a href="https://www.youtube.com/watch?v=example2" target="_blank">
+                        <img src="https://img.youtube.com/vi/example2/0.jpg" alt="YouTube Video Thumbnail">
                     </a>
-                    <div class="card-body" style="background-color: #f1f5f2;">
-                        <h5 class="card-title">페페플리2</h5>
-                        <p class="card-text">다른 스타일의 노래로 채워진 페페플리.</p>
+                    <div class="card-body">
+                        <h5 class="card-title">두번째 플리</h5>
+                        <p class="card-text">두번째 플리는 다양한 장르가 섞여 있어 더욱 풍성한 음악을 즐길 수 있다.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- 카드 3 -->
+            <div class="card-wrapper">
+                <div class="card-custom" style="background-color: #f1f3f5;">
+                    <a href="https://www.youtube.com/watch?v=example3" target="_blank">
+                        <img src="https://img.youtube.com/vi/example3/0.jpg" alt="YouTube Video Thumbnail">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">세번째 플리</h5>
+                        <p class="card-text">이 플리는 클래식 음악과 현대적인 느낌을 함께 즐길 수 있는 콤보다.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
