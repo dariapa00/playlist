@@ -11,6 +11,7 @@
             border-radius: 15px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            margin-bottom: 20px; /* 카드 간 간격 */
         }
         
         .card-custom:hover {
@@ -55,16 +56,28 @@
             background-color: #0056b3;
             color: white;
         }
+
+        /* 한 컨테이너에서 카드들이 넘치면 옆으로 스크롤 */
+        .card-container {
+            display: flex;
+            overflow-x: auto;
+            padding-bottom: 20px; /* 스크롤바 밑 간격 */
+        }
+
+        .card-container .col {
+            flex: 0 0 33.33%; /* 카드가 3개씩 가로로 배치되게 설정 */
+            max-width: 33.33%;
+        }
     </style>
 </head>
 <body>
     <div class="container mt-5">
         <h4>This is MY Playlist List.</h4>
 
-        <!-- 첫 번째 컨테이너 -->
-        <div class="row mb-4">
+        <!-- 첫 번째 카드 컨테이너 (가로로 스크롤 가능) -->
+        <div class="card-container mb-4">
             <!-- 카드 1 -->
-            <div class="col-md-4">
+            <div class="col">
                 <div class="card card-custom">
                     <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" target="_blank">
                         <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
@@ -79,7 +92,7 @@
                 </div>
             </div>
             <!-- 카드 2 -->
-            <div class="col-md-4">
+            <div class="col">
                 <div class="card card-custom">
                     <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" target="_blank">
                         <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
@@ -94,7 +107,7 @@
                 </div>
             </div>
             <!-- 카드 3 -->
-            <div class="col-md-4">
+            <div class="col">
                 <div class="card card-custom">
                     <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" target="_blank">
                         <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
@@ -108,12 +121,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- 두 번째 컨테이너 -->
-        <div class="row mb-4">
-            <!-- 카드 1 -->
-            <div class="col-md-4">
+            <!-- 카드 4 -->
+            <div class="col">
                 <div class="card card-custom">
                     <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" target="_blank">
                         <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
@@ -127,8 +136,8 @@
                     </div>
                 </div>
             </div>
-            <!-- 카드 2 -->
-            <div class="col-md-4">
+            <!-- 카드 5 -->
+            <div class="col">
                 <div class="card card-custom">
                     <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" target="_blank">
                         <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
@@ -142,8 +151,8 @@
                     </div>
                 </div>
             </div>
-            <!-- 카드 3 -->
-            <div class="col-md-4">
+            <!-- 카드 6 -->
+            <div class="col">
                 <div class="card card-custom">
                     <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" target="_blank">
                         <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
@@ -159,54 +168,6 @@
             </div>
         </div>
 
-        <!-- 세 번째 컨테이너 -->
-        <div class="row mb-4">
-            <!-- 카드 1 -->
-            <div class="col-md-4">
-                <div class="card card-custom">
-                    <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" target="_blank">
-                        <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">Late Night Playlist</h5>
-                        <p class="card-text">밤에 듣기 좋은 음악들로 구성된 플레이리스트입니다.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" class="btn btn-custom" target="_blank">감상하기</a>
-                    </div>
-                </div>
-            </div>
-            <!-- 카드 2 -->
-            <div class="col-md-4">
-                <div class="card card-custom">
-                    <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" target="_blank">
-                        <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">Morning Playlist</h5>
-                        <p class="card-text">하루를 시작하기 좋은 상쾌한 음악들로 구성된 플레이리스트입니다.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" class="btn btn-custom" target="_blank">감상하기</a>
-                    </div>
-                </div>
-            </div>
-            <!-- 카드 3 -->
-            <div class="col-md-4">
-                <div class="card card-custom">
-                    <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" target="_blank">
-                        <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">Travel Playlist</h5>
-                        <p class="card-text">여행할 때 듣기 좋은 음악들이 담긴 플레이리스트입니다.</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" class="btn btn-custom" target="_blank">감상하기</a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Bootstrap JS, Popper.js, jQuery 링크 -->
