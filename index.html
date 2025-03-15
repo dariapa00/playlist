@@ -1,31 +1,101 @@
-<div class="container mt-5">
-    <h4>This is MY Playlist List.</h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-custom {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
 
-    <div class="d-flex gap-3 flex-wrap">
-        <div class="card card-custom" style="width: 18rem; background-color: #f8faf8;">
-            <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" target="_blank">
-                <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
-            </a>
-            <div class="card-body" style="background-color: #f1f5f1;">
-                <h5 class="card-title">페페플리</h5>
-                <p class="card-text">제목이 없는 플리이지만 페페가 배경으로 있어서 페페플리라 불린다. 매우매우 좋은 음악들로 구성된 인생플리.</p>
-            </div>
-            <div class="card-footer text-center" style="background-color: #f8f9fa;">
-                <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" class="btn btn-custom" style="background-color: #49935a;" target="_blank">감상하기</a>
+        .card-img-top {
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+            height: 200px;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .card-footer {
+            background-color: white;
+            border-top: 1px solid #ddd;
+            padding: 0.75rem;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 50px;
+            text-transform: uppercase;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h4>This is MY Playlist List.</h4>
+
+        <div class="container mt-5">
+            <h4>This is MY Playlist List.</h4>
+        
+            <div class="d-flex gap-3 flex-wrap">
+                <div class="card card-custom" style="width: 18rem; background-color: #f8faf8;">
+                    <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" target="_blank">
+                        <img src="https://img.youtube.com/vi/SJ_AqcH1OUQ/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
+                    </a>
+                    <div class="card-body" style="background-color: #f1f5f1;">
+                        <h5 class="card-title">페페플리</h5>
+                        <p class="card-text">제목이 없는 플리이지만 페페가 배경으로 있어서 페페플리라 불린다. 매우매우 좋은 음악들로 구성된 인생플리.</p>
+                    </div>
+                    <div class="card-footer text-center" style="background-color: #f8f9fa;">
+                        <a href="https://www.youtube.com/watch?v=SJ_AqcH1OUQ&start=0" class="btn btn-custom" style="background-color: #49935a;" target="_blank">감상하기</a>
+                    </div>
+                </div>
+        
+                <div class="card card-custom" style="width: 18rem; background-color: #f8faf8;">
+                    <a href="https://www.youtube.com/watch?v=FSa4tVouRIc&&start=0" target="_blank">
+                        <img src="https://img.youtube.com/vi/FSa4tVouRIc/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
+                    </a>
+                    <div class="card-body" style="background-color: #f1f5f2;">
+                        <h5 class="card-title">페페플리2</h5>
+                        <p class="card-text">다른 스타일의 노래로 채워진 페페플리.</p>
+                    </div>
+                    <div class="card-footer text-center" style="background-color: #f8f9fa;">
+                        <a href="https://www.youtube.com/watch?v=FSa4tVouRIc&start=0" class="btn btn-custom" style="background-color: #156f1a;" target="_blank">감상하기</a>
+                    </div>
+                </div>
             </div>
         </div>
+        
 
-        <div class="card card-custom" style="width: 18rem; background-color: #f8faf8;">
-            <a href="https://www.youtube.com/watch?v=FSa4tVouRIc&&start=0" target="_blank">
-                <img src="https://img.youtube.com/vi/FSa4tVouRIc/0.jpg" class="card-img-top" alt="YouTube Video Thumbnail">
-            </a>
-            <div class="card-body" style="background-color: #f1f5f2;">
-                <h5 class="card-title">페페플리2</h5>
-                <p class="card-text">다른 스타일의 노래로 채워진 페페플리.</p>
-            </div>
-            <div class="card-footer text-center" style="background-color: #f8f9fa;">
-                <a href="https://www.youtube.com/watch?v=FSa4tVouRIc&start=0" class="btn btn-custom" style="background-color: #156f1a;" target="_blank">감상하기</a>
-            </div>
-        </div>
-    </div>
-</div>
+    <!-- Bootstrap JS, Popper.js, jQuery 링크 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
